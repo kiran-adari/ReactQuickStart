@@ -1,8 +1,5 @@
 import reactImage from "./assets/react-core-concepts.png";
-import componentsImg from "./assets/components.png";
-import propsImg from "./assets/config.png";
-import jsxImg from "./assets/jsx-ui.png";
-import stateImg from "./assets/state-mgmt.png";
+import { CORE_CONCEPTS } from "./data.js";
 
 const reactDescription = ["Fundamental", "Crucial", "Core"];
 
@@ -45,24 +42,24 @@ function App() {
           <h2>Core Concepts</h2>
           <ul>
             <CoreConcept
-              title="Components"
-              description="The core UI building block - compose the user interface by combining multiple components."
-              image={componentsImg}
+              title={CORE_CONCEPTS[0].title}
+              description={CORE_CONCEPTS[0].description}
+              image={CORE_CONCEPTS[0].image}
             />
             <CoreConcept
-              title="Props"
-              description="Make components configurable (and therefore reusable) by passing input data to them."
-              image={propsImg}
+              title={CORE_CONCEPTS[1].title}
+              description={CORE_CONCEPTS[1].description}
+              image={CORE_CONCEPTS[1].image}
             />
             <CoreConcept
-              title="JSX"
-              description="Return (potentially dynamic) HTML(ish) code to define the actual markup that will ve rendered."
-              image={jsxImg}
+              title={CORE_CONCEPTS[2].title}
+              description={CORE_CONCEPTS[2].description}
+              image={CORE_CONCEPTS[2].image}
             />
             <CoreConcept
-              title="State"
-              description="React-managed data which, when changed. causes the component to re-render & the UI to update."
-              image={stateImg}
+              title={CORE_CONCEPTS[3].title}
+              description={CORE_CONCEPTS[3].description}
+              image={CORE_CONCEPTS[3].image}
             />
           </ul>
         </section>
